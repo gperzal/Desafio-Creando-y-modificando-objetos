@@ -55,7 +55,7 @@ Paciente.prototype.buscarPorNombre = function (nombre) {
 Paciente.prototype.mostrarTodos = function () {
     // Asumiendo que hay una colección de pacientes
     pacientes.forEach(paciente => {
-        console.log(`Nombre: ${paciente.nombre}, rut: ${paciente.rut}, Edad: ${paciente.edad}, Diagnostico: ${paciente.diagnostico}`);
+        console.log(`Nombre: ${paciente.nombre}, Rut: ${paciente.rut}, Edad: ${paciente.edad}, Diagnostico: ${paciente.diagnostico}`);
     });
 };
 
