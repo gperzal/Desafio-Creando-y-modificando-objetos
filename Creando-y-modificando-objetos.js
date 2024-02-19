@@ -1,7 +1,7 @@
 // ------ Requerimiento 1: Crear una función constructora para cada objeto ------ 
-function Paciente(nombre, apellido, edad, diagnostico) {
+function Paciente(nombre, rut, edad, diagnostico) {
     this.nombre = nombre;
-    this.apellido = apellido;
+    this.rut = rut;
     this.edad = edad;
     this.diagnostico = diagnostico;
 }
@@ -17,13 +17,13 @@ Paciente.prototype.setNombre = function (nombre) {
 
 };
 
-// Getter y Setter para Apellido
-Paciente.prototype.getApellido = function () {
-    return this.apellido;
+// Getter y Setter para Rut
+Paciente.prototype.getRut = function () {
+    return this.rut;
 };
 
-Paciente.prototype.setApellido = function (apellido) {
-    this.apellido = apellido;
+Paciente.prototype.setRut = function (rut) {
+    this.rut = rut;
 };
 
 // Getter y Setter para Edad
@@ -55,14 +55,14 @@ Paciente.prototype.buscarPorNombre = function (nombre) {
 Paciente.prototype.mostrarTodos = function () {
     // Asumiendo que hay una colección de pacientes
     pacientes.forEach(paciente => {
-        console.log(`Nombre: ${paciente.nombre}, Apellido: ${paciente.apellido}, Edad: ${paciente.edad}, Diagnostico: ${paciente.diagnostico}`);
+        console.log(`Nombre: ${paciente.nombre}, rut: ${paciente.rut}, Edad: ${paciente.edad}, Diagnostico: ${paciente.diagnostico}`);
     });
 };
 
 // ------ Requerimiento 4: Instanciar cada objeto
-let paciente1 = new Paciente("Juan", "Pérez", 30, "Gripe");
-let paciente2 = new Paciente("Ana", "Gómez", 25, "Alergia");
-let paciente3 = new Paciente("Luis", "Martínez", 40, "Asma");
+let paciente1 = new Paciente("Juan", "11111111-1", 30, "Gripe");
+let paciente2 = new Paciente("Ana", "22222222-2", 25, "Alergia");
+let paciente3 = new Paciente("Luis", "33333333-3", 40, "Asma");
 
 // Añadir a una arreglo
 let pacientes = new Paciente("Luis", "Martínez", 40, "Asma");
